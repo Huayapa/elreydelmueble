@@ -3,9 +3,9 @@ class HeaderComponent extends HTMLElement {
   rutas = {
     inicio: {nombre: "Inicio", ruta: "index.html"},
     productos: {nombre: "Productos", ruta: "productos.html"},
-    servicios: {nombre: "Servicios", ruta: "#"},
+    servicios: {nombre: "Servicios", ruta: "servicios.html"},
     ubicacion: {nombre: "Ubicación", ruta: "ubicacion.html"},
-    fqa: {nombre: "FQA", ruta: "#"},
+    fqa: {nombre: "FQA", ruta: "fqa.html"},
     nosotros: {nombre: "Nosotros", ruta: "nosotros.html"},
   };
   constructor() {
