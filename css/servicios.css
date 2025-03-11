@@ -136,7 +136,7 @@ body {
 /* Sección de ofertas */
 .exclusive-offer {
   margin: 90px;
-  background: url('assets/img/oferta.png') center/cover no-repeat;
+  background: url('/assets/img/oferta.png') center/cover no-repeat;
   padding: 40px 20px;
   text-align: center;
   color: #fff;
