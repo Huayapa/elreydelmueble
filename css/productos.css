@@ -108,6 +108,24 @@
   gap: 1rem;
 }
 
+/* Boton filtro */
+.categoryBtn {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  right: 2vw;
+  z-index: 99;
+  padding: 0.5rem;
+  background-color: var(--color-primary-header);
+  border: 0;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+  &:hover {
+    scale: 1.1;
+    background-color: var(--color-primary-header-hover);
+  }
+}
 @media screen and (max-width: 800px ) {
   .section_prods {
     grid-template-columns: 100%;
@@ -118,11 +136,25 @@
     margin: 0 auto;
     padding: 0 0.5rem;
     height: 20rem;
+    border-radius: 10px;
 
-    position: sticky;
-    top: 4rem;
-    background-color: var(--color-secondary);
+
+    position: fixed;
+    bottom: 6rem;
+    right: 2vw;
+    background-color: var(--color-primary-header);
     z-index: 88;
     overflow-y: auto;
+    transform: translateX(120%);
+    transition: transform 0.6s ease;
+    & h2 {
+      color: var(--color-secondary);
+    }
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+  .categoryBtn {
+    display: block;
   }
 }

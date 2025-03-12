@@ -20,5 +20,10 @@ document.addEventListener("DOMContentLoaded", e => {
       $list_prods.appendChild($fragment)
     })
   
-  
+  // ACTIVAR CATEGORIA
+  const $btnCategory = document.getElementById("btncategory");
+  const $lista = document.querySelector(".prods_categorys")
+  $btnCategory.addEventListener("click", e => {
+    $lista.classList.toggle("active")
+  })
 });
