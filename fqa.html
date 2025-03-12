@@ -5,17 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El rey del mueble</title>
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/inicio.css">
   <link rel="stylesheet" href="css/fqa.css">
   <script rel="preload" type="module" src="componentes/header/headerComponent.js"></script>
-  <script rel="preload" type="module" src="componentes/blog/blogComponent.js"></script>
   <script rel="preload" type="module" src="componentes/footer/footerComponent.js"></script>
-  <script rel="preload" type="module" src="componentes/cardprod/cardprodComponent.js"></script>
 </head>
 <body>
-  <header-component>
-
-  </header-component>
+  <header-component></header-component>
  
 
 <main>
@@ -29,49 +24,47 @@
             </button>
         </div>
         
-        <div class="faq-questions">
-            <div class="faq-item">
-                <h3>¿Cómo puedo devolver un producto?</h3>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="faq-item">
-                <h3>¿Cómo devuelvo en tiendas un producto que he comprado en la web?</h3>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="faq-item">
-                <h3>¿De qué maneras puedo contactar con el rey del mueble?</h3>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="faq-item">
-                <h3>¿Cuáles son los plazos de devolución de un producto?</h3>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="faq-item">
-                <h3>¿Hay gastos de devolución?</h3>
-                <div class="divider"></div>
-            </div>
-        </div>
+        <article class="faq-questions">
+            <details class="faq-item">
+                <summary class="divider">
+                    <h3>¿Cómo puedo devolver un producto?</h3>
+                </summary>
+                <p class="info">Si deseas devolver un producto, contáctanos dentro de los primeros 7 días tras la entrega a través de nuestro Whatsapp. El artículo debe estar en su estado original, sin uso y con su empaque completo. Evaluaremos tu solicitud y te indicaremos los pasos a seguir, ya sea enviarlo a nuestra dirección o programar una recolección. Si la devolución es por un defecto de fábrica, cubrimos los costos; de lo contrario, pueden aplicar cargos. Una vez recibido, revisaremos el producto y procesaremos el reembolso o cambio en un plazo de 10 días hábiles.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="divider">
+                    <h3>¿Cómo devuelvo en tiendas un producto que he comprado en la web?</h3>
+                </summary>
+                <p class="info">Si compraste un producto en nuestra web y deseas devolverlo en una de nuestras tiendas, solo necesitas llevarlo junto con la factura o comprobante de compra dentro del plazo establecido. El artículo debe estar en su estado original, sin uso y con su empaque completo. Nuestro equipo en tienda revisará el producto y, si cumple con las condiciones de devolución, procederemos con el reembolso o el cambio según tu preferencia. Si la compra fue con tarjeta, el reembolso se procesará a través del mismo método de pago y puede tardar algunos días en reflejarse.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="divider">
+                    <h3>¿De qué maneras puedo contactar con el rey del mueble?</h3>
+                </summary>
+                <p class="info">Puedes contactarnos visitando cualquiera de nuestras sucursales, donde nuestro equipo estará encantado de atenderte y asesorarte en lo que necesites. También puedes escribirnos por WhatsApp para una atención rápida y personalizada. Encuentra la dirección de nuestras tiendas y nuestro número de WhatsApp en nuestra página web o redes sociales. ¡Estamos aquí para ayudarte!</p>
+            </details>
+            <details class="faq-item">
+                <summary class="divider">
+                    <h3>¿Cuáles son los plazos de devolución de un producto?</h3>
+                </summary>
+                <p class="info">El plazo para devolver un producto es de 7 días a partir de la fecha de entrega. Durante este tiempo, puedes solicitar un reembolso o cambio si el artículo no cumplió con tus expectativas o presentó algún inconveniente. Es importante que el producto se encuentre en su estado original, sin uso y con su empaque completo. Una vez que recibamos la devolución, realizaremos una revisión y procesaremos el reembolso o cambio en el menor tiempo posible. Si tienes dudas sobre el proceso, nuestro equipo de atención al cliente estará encantado de ayudarte.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="divider">
+                    <h3>¿Hay gastos de devolución?</h3>
+                </summary>
+                <p class="info">Los gastos de devolución pueden variar según el motivo. Si el producto presenta un defecto de fábrica o hubo un error en el envío, cubrimos todos los costos asociados al proceso. Sin embargo, si la devolución es por decisión del cliente, como un cambio de opinión, los gastos de envío correrán por su cuenta. Para conocer más detalles y el procedimiento exacto, puedes contactarnos y con gusto te asesoraremos.</p>
+            </details>
+        </article>
     </section>
     
     <section class="contact-section">
         <h2>CONTACTA CON NOSOTROS</h2>
-        <a href="#" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i> ¿Quieres hablar con nosotros?
+        <a href="https://wa.me/978231231" target="_blank" class="whatsapp-button">
+            Comunicate por Whatsapp
         </a>
     </section>
-    <section>
-        
-    </section>
-
-    
 </main>
 <footer-component> </footer-component>
-<script src="js/index.js" type="module"></script>
 </body>
 </html>
-
-<!-- https://furniture-api.fly.dev/v1/products   -->
