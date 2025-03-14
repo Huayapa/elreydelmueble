@@ -23,8 +23,8 @@ export function sliderCardOffert() {
     movedArticle(indice);
   });
 
-  // setInterval(() => {
-  //   indice = (indice < articles.length - 1) ? indice + 1 : 0;
-  //   movedArticle(indice);
-  // }, 4000);
+  setInterval(() => {
+    indice = (indice < articles.length - 1) ? indice + 1 : 0;
+    movedArticle(indice);
+  }, 4000);
 }
