@@ -163,7 +163,7 @@ body {
 }
 
 /* Modo Mobil */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero {
     flex-direction: column;
     padding: 20px;
